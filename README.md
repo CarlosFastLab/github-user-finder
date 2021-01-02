@@ -14,7 +14,7 @@ Ao lado da sidebar, a aplicação exibe um mapa (inicializado sem renderização
 ![screenshot](/prints/blankstate.jpg)
 Aplicação inicializada, blankstate.
 
-![screenshot](/prints/loadinguser.jpg)
+![screenshot](/prints/loadinguser.jpg)<br/>
 Ícone de loading ao ser inicialziada a chamada à API do GitHub, quando o usuário confirma a busca.
 
 ![screenshot](/prints/nonexistinguser.jpg)
