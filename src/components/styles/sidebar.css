@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap');
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.6%;
+    padding-top: 20px;
+    height: 96.6vh;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    background-color: #232424;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+
+.sidebar__input-area {
+    display: flex;
+    margin-left: 20%;
+    width: auto;
+}
+
+.sidebar__input-button {
+    background-color: rgba(155, 155, 155, 0.5);
+    padding: 5% 5% 5% 5%;
+    border-radius: 15px;
+    margin-left: 50%;
+    margin-top: 10%;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sidebar__input-button:hover {
+    color: #36eeeb;
+    font-size: 17px;
+}
+
+
+.sidebar__icon {
+    position: absolute;
+    margin-left: 0.5%;
+    margin-top: 0.63%;
+    padding: 1.4% 1.4% 1.4% 1.4%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+.sidebar__input {
+    padding: 4.5% 30% 4.5% 30%;
+    width: auto;
+    border-radius: 25px;
+    border-bottom: 1px solid rgba(152, 240, 239, 0.3);
+    box-shadow: 0 2px 8px rgba(152, 240, 239, 0.3);
+    text-align: center;
+}
+
+.sidebar__error {
+    margin-left: 33%;
+    color: red;
+    font-weight: bold;
+}
+
+.sidebar__loading {
+    color: #FFF;
+    margin-left: 46%;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.sidebar__user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #232424;
+}
+
+.sidebar__img {
+    margin-top: 5%;
+    margin-left: 33%;
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+}
+
+.sidebar__item-heading {
+    margin-left: 3.3%;
+    color: #FFF;
+    font-family: 'Mukta', sans-serif;
+    border-bottom: 1px solid rgba(152, 240, 239, 1);
+    background-color: #232424;
+}
+
+.sidebar__item {
+    margin-top: -3%;
+    padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    color: #FFF;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    background-color: #232424;
+}
+
+.sidebar__link {
+    text-decoration: none;
+    margin-top: -3%;
+    padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    color: #FFF;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    transition: all 0.3s;
+    background-color: #232424;
+}
+
+.sidebar__link:hover {
+    color: #36eeeb;
+}
+
+
+.sidebar__message {
+    color: #FFF;
+    font-family: 'Mukta', sans-serif;
+    margin-left: 30%;
+}
