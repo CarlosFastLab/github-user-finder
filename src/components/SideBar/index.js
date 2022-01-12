@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faCircleNotch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faCircleNotch, faStar } from '@fortawesome/free-solid-svg-icons';
 
 import '../styles/sidebar.css'
 
@@ -74,7 +74,16 @@ export default function SideBar({
                                             key={likedRepositories.id}>
                                             <a
                                                 className="sidebar__link"
-                                                href={likedRepositories.html_url}>{likedRepositories.name}</a>
+                                                href={likedRepositories.html_url}>
+                                                <div className='sidebar__link-icon'>
+                                                    <FontAwesomeIcon
+                                                        className="sidebar__link-icon"
+                                                        icon={faStar}
+                                                        size="1x"
+                                                    />
+                                                </div>
+                                                {likedRepositories.name}
+                                            </a>
                                         </div>
                                     ))}
                                 </section>

@@ -14,8 +14,8 @@ export default function App() {
   const [userSearch, setUserSearch] = useState('');
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState(null);
-  const [lat, setLat] = useState(null);
-  const [lng, setLng] = useState(null);
+  const [lat, setLat] = useState(0);
+  const [lng, setLng] = useState(0);
 
   function handleInputChange(e) {
     setUserSearch(e.target.value);
@@ -44,8 +44,8 @@ export default function App() {
         const userLocation = responseUser.data.location
         const responseCoordinates = await apiMap.get(`/json?address=${userLocation}&key=${process.env.REACT_APP_GOOGLE_KEY}`);
         const dataCoordinates = {
-          lat: responseCoordinates.data.results[0].geometry.location.lat,
-          lng: responseCoordinates.data.results[0].geometry.location.lng,
+          lat: +responseCoordinates.data.results[0].geometry.location.lat,
+          lng: +responseCoordinates.data.results[0].geometry.location.lng,
         };
         setLat(dataCoordinates.lat);
         setLng(dataCoordinates.lng);
@@ -79,15 +79,14 @@ export default function App() {
           loadingElement={<div style={{ height: "100%" }} />}
           containerElement={<div style={
             {
-              height: "98.7%",
-              width: "75.1%",
-              marginLeft: '25%',
-              zIndex: "-1",
-              backgroundColor: '#232424'
+              height: "90.5vh",
+              width: "60vw",
+              marginLeft: "425px",
+              zIndex: "3",
             }
           }
           />}
-          mapElement={<div style={{ height: "90%" }} />}
+          mapElement={<div style={{ height: "100%" }} />}
         />
       </div>
     </>

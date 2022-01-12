@@ -3,21 +3,22 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    margin-top: 5.6%;
-    padding-top: 20px;
-    height: 96.6vh;
-    width: 25%;
+    margin-top: 88px;
+    padding-top: 30px;
+    height: 819px;
+    width: 425px;
     position: absolute;
     top: 0;
     background-color: #232424;
-    z-index: 1;
     overflow-y: scroll;
+    z-index: 1;
 }
 
 
 .sidebar__input-area {
     display: flex;
-    margin-left: 20%;
+    justify-content: center;
+    margin-right: 25%;
     width: auto;
 }
 
@@ -45,8 +46,8 @@
 
 .sidebar__icon {
     position: absolute;
-    margin-left: 0.5%;
-    margin-top: 0.63%;
+    margin-left: 6px;
+    margin-top: 4px;
     padding: 1.4% 1.4% 1.4% 1.4%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 25px;
@@ -62,14 +63,14 @@
 }
 
 .sidebar__error {
-    margin-left: 33%;
+    margin-left: 30%;
     color: red;
     font-weight: bold;
 }
 
 .sidebar__loading {
     color: #FFF;
-    margin-left: 46%;
+    margin-left: 43%;
     margin-top: 5%;
     font-weight: bold;
 }
@@ -83,7 +84,7 @@
 
 .sidebar__img {
     margin-top: 5%;
-    margin-left: 33%;
+    margin-left: 31%;
     border-radius: 50%;
     width: 30%;
     height: 30%;
@@ -93,6 +94,7 @@
     margin-left: 3.3%;
     color: #FFF;
     font-family: 'Mukta', sans-serif;
+    font-size: 22px;
     border-bottom: 1px solid rgba(152, 240, 239, 1);
     background-color: #232424;
 }
@@ -100,7 +102,7 @@
 .sidebar__item {
     margin-top: -3%;
     padding: 6px 8px 6px 16px;
-    font-size: 25px;
+    font-size: 20px;
     color: #FFF;
     display: block;
     font-family: 'Mukta', sans-serif;
@@ -110,13 +112,20 @@
 .sidebar__link {
     text-decoration: none;
     margin-top: -3%;
-    padding: 6px 8px 6px 16px;
-    font-size: 25px;
+    padding: 6px 8px 15px 16px;
+    font-size: 20px;
     color: #FFF;
-    display: block;
+    display: flex;
+    flex-direction: row;
     font-family: 'Mukta', sans-serif;
     transition: all 0.3s;
     background-color: #232424;
+}
+
+.sidebar__link-icon {
+    margin-right: 5px;
+    margin-top: 4px;
+    font-size: 16px;
 }
 
 .sidebar__link:hover {
@@ -127,5 +136,26 @@
 .sidebar__message {
     color: #FFF;
     font-family: 'Mukta', sans-serif;
-    margin-left: 30%;
+    margin-left: 27%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    border: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(22, 128, 146);
+    border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(63, 62, 62);
+    border: none
 }

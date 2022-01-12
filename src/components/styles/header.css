@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap');
 
 .header {
+    height: 88px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,11 +18,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    margin-left: 2%;
+    margin-left: 35px;
 }
 
 .header__text {
     font-family: 'Mukta', sans-serif;
     font-size: 35px;
-    margin-left: 1%
+    margin-left: 15px
 }
